@@ -6,20 +6,17 @@ function start(){
       $username = $_POST["username"];
       $password = $_POST["password"];
 
-      if($username == "guest" && $password == "welcome"){
-        echo "Login Succeeded. Welcome ".$username. ".<br />";
-        setcookie("id", session_id, time()+60);
-        setcookie("timeloggedin", time(), time()+60);
-        showLogged();
-      }else{
-        echo "Login Failed.<br />Bad username or password";
-        echo "<br />You entered username: ".$username;
-        echo "<br />and Password: ".$password;
-        echo "<br /><a href=\"http://zweb.cs.utexas.edu/users/cs329e-fa16/minhtri/quiz7/state.php\"> Back to the form </a>";
+      $fh = fopen("signup.txt", "r");
+      //Check if username is already taken
+      $userlist = Array();
+      while(!feof($fh)){
+        //Read Line
+        $line = fgets($fh);
+        $line_pieces = explode(",", $line);
+        $userlist[$line_pieces[0]] = $line_pieces[1];
       }
-    }else if(isset($_POST["logout"])){
-      // echo "logout";
-      showLoggedOut();
+      fclose($fh);
+      print_r($userlist);
     }
   }else{
     if(isset($_COOKIE["id"])){ //In a session
@@ -35,8 +32,8 @@ function start(){
 function showRegister(){ ?>
   <p>Registration Page</p>
   <form method="post" action="#">
-    <input type="text" name="username" />
-    <input type="text" name="password" /><br />
+    Username: <input type="text" name="username" /><br />
+    Password: <input type="text" name="password" /><br />
     <input type="submit" name="submit" value="Submit" />
     <input type="reset" name="reset" value="Reset" />
   </form>
