@@ -2,6 +2,7 @@
 
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Trump on Abortion and Immigration, and back on Twitter</title>
 </head>
 

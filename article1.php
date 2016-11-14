@@ -2,6 +2,7 @@
 
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Reine Priebus, the party leader, is named Chief of Staff</title>
 </head>
 

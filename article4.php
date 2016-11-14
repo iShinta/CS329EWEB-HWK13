@@ -2,6 +2,7 @@
 
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Teslas in Trailer Parks: California’s Housing Squeeze</title>
 </head>
 

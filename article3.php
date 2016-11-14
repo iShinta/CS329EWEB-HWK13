@@ -2,6 +2,7 @@
 
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Syrian Rebels Brace for a Trump Cutoff, but See Some Upside</title>
 </head>
 
