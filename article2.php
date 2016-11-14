@@ -2,17 +2,12 @@
 
 <html>
 <head>
-  <title>Article 2</title>
+  <title>Trump on Abortion and Immigration, and back on Twitter</title>
 </head>
 
 <body>
-  <h1>Article 2</h1>
-  <ul>
-    <li><a href="article1.php">Article 1</a></li>
-    <li><a href="article2.php">Article 2</a></li>
-    <li><a href="article3.php">Article 3</a></li>
-    <li><a href="article4.php">Article 4</a></li>
-    <li><a href="article5.php">Article 5</a></li>
-  </ul>
+  <h1>Trump on Abortion and Immigration, and back on Twitter</h1>
+  <?php include 'menu.php'; ?>
+  <p>On “60 Minutes,” Mr. Trump said he would prioritize deporting up to three million illegal immigrants and pick a Supreme Court justice who opposes abortion rights. </p>
 </body>
 </html>

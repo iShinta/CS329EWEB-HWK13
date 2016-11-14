@@ -2,17 +2,12 @@
 
 <html>
 <head>
-  <title>Article 4</title>
+  <title>Teslas in Trailer Parks: California’s Housing Squeeze</title>
 </head>
 
 <body>
-  <h1>Article 4</h1>
-  <ul>
-    <li><a href="article1.php">Article 1</a></li>
-    <li><a href="article2.php">Article 2</a></li>
-    <li><a href="article3.php">Article 3</a></li>
-    <li><a href="article4.php">Article 4</a></li>
-    <li><a href="article5.php">Article 5</a></li>
-  </ul>
+  <h1>Teslas in Trailer Parks: California’s Housing Squeeze</h1>
+  <?php include 'menu.php'; ?>
+  <p>Most Californians agree that it costs too much to live in the state. Mountain View, Google’s hometown, is trying to do something about the housing shortage that has increased prices.</p>
 </body>
 </html>

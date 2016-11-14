@@ -2,17 +2,12 @@
 
 <html>
 <head>
-  <title>Article 3</title>
+  <title>Syrian Rebels Brace for a Trump Cutoff, but See Some Upside</title>
 </head>
 
 <body>
-  <h1>Article 3</h1>
-  <ul>
-    <li><a href="article1.php">Article 1</a></li>
-    <li><a href="article2.php">Article 2</a></li>
-    <li><a href="article3.php">Article 3</a></li>
-    <li><a href="article4.php">Article 4</a></li>
-    <li><a href="article5.php">Article 5</a></li>
-  </ul>
+  <h1>Syrian Rebels Brace for a Trump Cutoff, but See Some Upside</h1>
+  <?php include 'menu.php'; ?>
+  <p>President-elect Donald J. Trump has suggested he will end support, which some groups hope would encourage Saudi Arabia and Turkey to provide more sophisticated weapons.</p>
 </body>
 </html>
