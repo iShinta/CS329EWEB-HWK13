@@ -58,11 +58,11 @@
   <?php }
 
   function showLogged(){ //TODO: Show article
-    ?><div style="border: solid 1px;"><?php echo "Hi ".$_COOKIE["id"];
-    //echo "<br /> Time logged in: ".$_COOKIE["timeloggedin"]; ?>
+    ?><div style="border: solid 1px;">
     <form method="post" action="#">
       <input type="submit" name="logout" value="Log Out" />
-    </form></div>
+    </form><?php echo "Hi ".$_COOKIE["id"];
+    //echo "<br /> Time logged in: ".$_COOKIE["timeloggedin"]; ?></div>
     <?php
     //Form has been submitted, check if login ok
   }
