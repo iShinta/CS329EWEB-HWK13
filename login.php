@@ -20,7 +20,7 @@
 
         echo 'Password pour ce username: ';
         print($userlist[$username]."<br />");
-        if(array_key_exists($username, $userlist) && $userlist[$username] == $password){
+        if(array_key_exists($username, $userlist) && strcmp($userlist[$username], $password)){
           echo "Login Succeeded. Welcome ".$username. ".<br />";
           setcookie("id", session_id, time()+120);
           setcookie("timeloggedin", time(), time()+120);
