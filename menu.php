@@ -47,7 +47,7 @@
   }
 
   function showLogin(){ ?>
-    <p>Please Log In</p>
+    <h2>Please Log In</h2>
     <form method="post" action="#">
       <input type="text" name="username" />
       <input type="text" name="password" /><br />
