@@ -24,7 +24,7 @@ function start(){
         fwrite($fh2, $username.":".$password);
         fclose($fh2);
       }else{
-        echo $username." already exists."
+        echo $username." already exists.";
       }
 
     }
