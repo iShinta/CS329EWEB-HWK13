@@ -12,12 +12,18 @@ function start(){
       while(!feof($fh)){
         //Read Line
         $line = fgets($fh);
-        $line_pieces = explode(",", $line);
-        print_r($line_pieces[0]);
+        $line_pieces = explode(":", $line);
         $userlist[$line_pieces[0]] = $line_pieces[1];
       }
       fclose($fh);
-      print_r($userlist);
+      //print_r($userlist);
+
+      //If not taken, register
+      $fh = fopen("passwd.txt", "a");
+      if(!array_key_exists($username, $userlist)){
+        fwrite($fh, $username.":".$password);
+      }
+      fclose($fh);
     }
   }else{
     if(isset($_COOKIE["id"])){ //In a session
