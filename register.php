@@ -21,6 +21,9 @@ function start(){
       //If not taken, register
       $fh = fopen("passwd.txt", "a");
       if(!array_key_exists($username, $userlist)){
+        echo "Write";
+        print($username);
+        print($password);
         fwrite($fh, $username.":".$password);
       }
       fclose($fh);
