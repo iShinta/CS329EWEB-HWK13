@@ -41,6 +41,7 @@ function showLogin(){ ?>
     <input type="submit" name="submit" value="Submit" />
     <input type="reset" name="reset" value="Reset" />
   </form>
+  <p>You don't have a login? Register here: <a href="register.php">Register</a></p>
 <?php }
 
 function showLogged(){
@@ -58,8 +59,6 @@ function showLoggedOut(){
   unset($_COOKIE["timeloggedin"]);
   setcookie("id", '', time() - 3600);
   setcookie("timeloggedin", '', time() - 3600);
-  session_unset();
-  session_destroy();
   echo "<p>Thank You. You are now logged out</p>";
 }
 ?>
