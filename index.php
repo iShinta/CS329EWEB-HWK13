@@ -2,11 +2,16 @@
 
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Newspaper</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-  <h1>Newspaper</h1>
-  <?php include 'menu.php'; ?>
+  <div class="container">
+    <h1>Newspaper</h1>
+    <?php include 'menu.php'; ?>
+  </div>
+
 </body>
 </html>
