@@ -6,7 +6,7 @@ function start(){
       $username = $_POST["username"];
       $password = $_POST["password"];
 
-      $fh = fopen("signup.txt", "r");
+      $fh = fopen("passwd.txt", "r");
       //Check if username is already taken
       $userlist = Array();
       while(!feof($fh)){
