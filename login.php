@@ -7,9 +7,20 @@ function start(){
       $password = $_POST["password"];
 
       //TODO: Check file to see if user is authorized
+      $fh = fopen("passwd.txt", "r");
+      //Check if username is already taken
+      $userlist = Array();
+      while(!feof($fh)){
+        //Read Line
+        $line = fgets($fh);
+        $line_pieces = explode(":", $line);
+        $userlist[$line_pieces[0]] = $line_pieces[1];
+      }
+      fclose($fh);
 
-
-      if($username == "guest" && $password == "welcome"){
+      echo 'Password pour ce username';
+      print($userlist[$username]);
+      if(array_key_exists($username, $userlist) && $userlist[$username] == $password){
         echo "Login Succeeded. Welcome ".$username. ".<br />";
         setcookie("id", session_id, time()+120);
         setcookie("timeloggedin", time(), time()+120);
@@ -64,13 +75,3 @@ function start(){
   }
 }
 ?>
-
-<!DOCTYPE html>
-<html>
-  <head>
-  </head>
-
-  <body>
-    <?php start(); ?>
-  </body>
-</html>
