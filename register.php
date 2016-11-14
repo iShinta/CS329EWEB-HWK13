@@ -13,6 +13,7 @@ function start(){
         //Read Line
         $line = fgets($fh);
         $line_pieces = explode(",", $line);
+        print_r($line_pieces[0]);
         $userlist[$line_pieces[0]] = $line_pieces[1];
       }
       fclose($fh);
