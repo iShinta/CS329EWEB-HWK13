@@ -16,7 +16,7 @@ function start(){
         $userlist[$line_pieces[0]] = $line_pieces[1];
       }
       fclose($fh);
-      print_r($userlist);
+      //print_r($userlist);
 
       //If not taken, register
       if(!array_key_exists($username, $userlist)){

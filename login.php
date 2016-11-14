@@ -7,6 +7,8 @@ function start(){
       $password = $_POST["password"];
 
       //TODO: Check file to see if user is authorized
+
+
       if($username == "guest" && $password == "welcome"){
         echo "Login Succeeded. Welcome ".$username. ".<br />";
         setcookie("id", session_id, time()+120);
