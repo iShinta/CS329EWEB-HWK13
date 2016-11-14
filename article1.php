@@ -16,7 +16,7 @@
     ?>
     <p>President-elect Donald J. Trump chose Mr. Priebus, whose friendship with the House speaker, Paul D. Ryan, could help secure early legislative victories.</p>
     <?php }else{
-      echo "You need to log in to read this article."
+      echo "You need to log in to read this article.";
     }?>
   </div>
 </body>

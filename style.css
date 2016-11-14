@@ -15,6 +15,10 @@ h1{
 	margin: 10px;
 }
 
+.menu{
+  float: left;
+}
+
 .login{
   float: left;
 }
