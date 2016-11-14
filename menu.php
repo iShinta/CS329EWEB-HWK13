@@ -58,8 +58,8 @@
   <?php }
 
   function showLogged(){ //TODO: Show article
-    echo "Cookie id: ".$_COOKIE["id"];
-    echo "<br /> Time logged in: ".$_COOKIE["timeloggedin"]; ?>
+    echo "Hi ".$_COOKIE["id"];
+    //echo "<br /> Time logged in: ".$_COOKIE["timeloggedin"]; ?>
     <form method="post" action="#">
       <input type="submit" name="logout" value="Log Out" />
     </form>
