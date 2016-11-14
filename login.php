@@ -44,6 +44,7 @@ function start(){
       showLogin();
     }
   }
+}
 
   function showLogin(){ ?>
     <p>Please Log In</p>
