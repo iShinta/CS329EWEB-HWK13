@@ -19,14 +19,14 @@ function start(){
       //print_r($userlist);
 
       //If not taken, register
-      $fh2 = fopen("passwd.txt", "a");
       if(!array_key_exists($username, $userlist)){
-        echo "Write";
-        print($username);
-        print($password);
+        $fh2 = fopen("passwd.txt", "a");
         fwrite($fh2, $username.":".$password);
+        fclose($fh2);
+      }else{
+        echo $username." already exists."
       }
-      fclose($fh2);
+
     }
   }else{
     if(isset($_COOKIE["id"])){ //In a session
