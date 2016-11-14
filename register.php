@@ -22,12 +22,11 @@ function start(){
       $fh2 = fopen("passwd.txt", "a");
       if(!array_key_exists($username, $userlist)){
         echo "Write";
-        fwrite($fh2, "Wesh");
         print($username);
         print($password);
+        fwrite($fh2, $username.":".$password);
       }
       fclose($fh2);
-      echo "end registration";
     }
   }else{
     if(isset($_COOKIE["id"])){ //In a session
