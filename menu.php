@@ -18,8 +18,8 @@
         }
         fclose($fh);
 
-        echo 'Password pour ce username: ';
-        print($userlist[$username]."<br />");
+        //echo 'Password pour ce username: ';
+        //print($userlist[$username]."<br />");
         if(array_key_exists($username, $userlist) && strcmp($userlist[$username], $password)){
           echo "Login Succeeded. Welcome ".$username. ".<br />";
           setcookie("id", session_id, time()+120);
@@ -47,7 +47,7 @@
   }
 
   function showLogin(){ ?>
-    <h2>Please Log In</h2>
+    <h3>Please Log In</h3>
     <form method="post" action="#">
       <input type="text" name="username" />
       <input type="text" name="password" /><br />
@@ -58,11 +58,11 @@
   <?php }
 
   function showLogged(){ //TODO: Show article
-    echo "Hi ".$_COOKIE["id"];
+    <div style="border: solid 1px;">echo "Hi ".$_COOKIE["id"];
     //echo "<br /> Time logged in: ".$_COOKIE["timeloggedin"]; ?>
     <form method="post" action="#">
       <input type="submit" name="logout" value="Log Out" />
-    </form>
+    </form></div>
     <?php
     //Form has been submitted, check if login ok
   }
