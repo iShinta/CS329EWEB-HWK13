@@ -23,15 +23,16 @@ function start(){
         $fh2 = fopen("passwd.txt", "a");
         fwrite($fh2, $username.":".$password);
         fclose($fh2);
+        print($username." has been successfully registered");
       }else{
-        echo $username." already exists.";
+        print($username." already exists.");
       }
 
     }
   }else{
     if(isset($_COOKIE["id"])){ //In a session
       //Recuperer les variables de la session
-      echo "You are already registered.";
+      print("You are already registered.");
     }else{ //Is not in a session
       // echo "Not in a session, Showing Login";
       showRegister();
