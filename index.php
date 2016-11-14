@@ -7,6 +7,6 @@
 
 <body>
   <h1>Newspaper</h1>
-  <?php include('menu.php'); ?>
+  <?php include 'menu.php'; ?>
 </body>
 </html>
