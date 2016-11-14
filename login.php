@@ -74,14 +74,6 @@
     setcookie("timeloggedin", '', time() - 3600);
     echo "<p>Thank You. You are now logged out</p>";
   }
+
+  start();
 ?>
-
-<!DOCTYPE html>
-<html>
-  <head>
-  </head>
-
-  <body>
-    <?php start(); ?>
-  </body>
-</html>
