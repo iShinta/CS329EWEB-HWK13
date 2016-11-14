@@ -11,14 +11,10 @@ html, body{
 
 h1{
 	text-align: center;
-	font-size: 4em;
+	font-size: 2em;
 	margin: 10px;
 }
 
-.menu{
-  float: left;
-}
-
-.login{
-  float: left;
+.menu li{
+  display: inline-block;
 }

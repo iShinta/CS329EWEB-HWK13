@@ -9,7 +9,7 @@
 
 <body>
   <div class="container">
-    <h1>Newspaper</h1>
+    <h1>Austin Newspaper</h1>
     <?php include 'menu.php'; ?>
   </div>
 

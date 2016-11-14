@@ -77,7 +77,7 @@
 ?>
 
 <div class="menu">
-  <h2><Menu></h2>
+  <h3>Menu</h3>
   <ul>
     <li><a href="article1.php">Reine Priebus, the party leader, is named Chief of Staff</a></li>
     <li><a href="article2.php">Trump on Abortion and Immigration, and back on Twitter</a></li>
