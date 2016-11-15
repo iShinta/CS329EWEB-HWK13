@@ -59,7 +59,7 @@
 
   function showLogged(){ //TODO: Show article
     ?><div style="border: solid 1px;">
-    <form method="post" action="#">
+    <form method="post" action="index.php">
       <input type="submit" name="logout" value="Log Out" />
     </form><?php echo "Hi ".$_COOKIE["id"];
     //echo "<br /> Time logged in: ".$_COOKIE["timeloggedin"]; ?></div>
@@ -72,7 +72,7 @@
     unset($_COOKIE["timeloggedin"]);
     setcookie("id", '', time() - 3600);
     setcookie("timeloggedin", '', time() - 3600);
-    echo "<p>Thank You. You are now logged out. <a href=\"index.php\"> Back to the homepage </a></p>";
+    echo "<p>Thank You. You are now logged out.</p>";
   }
 ?>
 
