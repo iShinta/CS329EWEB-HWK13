@@ -24,8 +24,10 @@ function start(){
         fwrite($fh2, $username.":".$password."\n");
         fclose($fh2);
         print($username." has been successfully registered");
+        print("<br /><a href=\"index.php\"> Back to the homepage </a>");
       }else{
         print($username." already exists.");
+        print("<br /><a href=\"index.php\"> Back to the homepage </a>");
       }
 
     }
@@ -33,6 +35,7 @@ function start(){
     if(isset($_COOKIE["id"])){ //In a session
       //Recuperer les variables de la session
       print("You are already registered.");
+      print("<br /><a href=\"index.php\"> Back to the homepage </a>");
     }else{ //Is not in a session
       // echo "Not in a session, Showing Login";
       showRegister();
