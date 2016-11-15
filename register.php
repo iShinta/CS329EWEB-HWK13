@@ -23,6 +23,8 @@ function start(){
         $fh2 = fopen("passwd.txt", "a");
         fwrite($fh2, $username.":".$password."\n");
         fclose($fh2);
+        setcookie("id", $username, time()+120);
+        setcookie("timeloggedin", time(), time()+120);
         print($username." has been successfully registered");
         print("<br /><a href=\"index.php\"> Back to the homepage </a>");
       }else{
