@@ -20,5 +20,5 @@
       echo "<p>You need to log in to read this article.</p>";
     }?>
   </div>
-</body>‘DNA Is Not Destiny’ With Heart Disease, New Research Says
+</body>
 </html>
