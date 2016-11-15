@@ -21,15 +21,15 @@
         //echo 'Password pour ce username: ';
         //print($userlist[$username]."<br />");
         if(array_key_exists($username, $userlist) && strcmp($userlist[$username], $password)){
-          echo "Login Succeeded. Welcome ".$username. ".<br />";
-          setcookie("id", session_id, time()+120);
+          //echo "Login Succeeded. Welcome ".$username. ".<br />";
+          setcookie("id", $username, time()+120);
           setcookie("timeloggedin", time(), time()+120);
           showLogged();
         }else{
           echo "Login Failed.<br />Bad username or password";
           echo "<br />You entered username: ".$username;
           echo "<br />and Password: ".$password;
-          echo "<br /><a href=\"http://zweb.cs.utexas.edu/users/cs329e-fa16/minhtri/hwk13/index.php\"> Back to the form </a>";
+          echo "<br /><a href=\"index.php\"> Back to the homepage </a>";
         }
       }else if(isset($_POST["logout"])){
         // echo "logout";
@@ -72,7 +72,7 @@
     unset($_COOKIE["timeloggedin"]);
     setcookie("id", '', time() - 3600);
     setcookie("timeloggedin", '', time() - 3600);
-    echo "<p>Thank You. You are now logged out</p>";
+    echo "<p>Thank You. You are now logged out. <a href=\"index.php\"> Back to the homepage </a></p>";
   }
 ?>
 
